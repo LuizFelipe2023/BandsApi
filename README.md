@@ -41,9 +41,19 @@ php artisan serve
 | **Albums** | `ANY` | `/api/albums` | Sim |
 | **Members**| `ANY` | `/api/members`| Sim |
 
-## 🏗️ Estrutura do Projeto
-- **Actions:** `app/Actions/` (Lógica de escrita)
-- **Requests:** `app/Http/Requests/` (Validações)
-- **Resources:** `app/Http/Resources/` (Formatação da resposta)
+🏗️ Estrutura do Projeto
+O projeto segue o padrão de Camadas, separando responsabilidades para facilitar a manutenção:
+
+Actions: app/Actions/ — Onde a "mágica" acontece (Lógica de negócio pura).
+
+Requests: app/Http/Requests/ — Onde barramos dados inválidos (Validação).
+
+Resources: app/Http/Resources/ — Onde escolhemos o que o frontend vai ver (Transformação).
+
+Models: app/Models/ — Representação das tabelas e seus relacionamentos (Eloquent).
+
+Migrations: database/migrations/ — O histórico de evolução do banco de dados.
+
+Seeders: database/seeders/ — Dados iniciais para teste e desenvolvimento.
 
 ---
