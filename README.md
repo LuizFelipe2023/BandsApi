@@ -1,7 +1,6 @@
 
 ---
 
-```markdown
 # 🎵 Band Manager API
 
 API RESTful para gestão de bandas, álbuns e membros, desenvolvida com **Laravel 12** e **SQLite**.
